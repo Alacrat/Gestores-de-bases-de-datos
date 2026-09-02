@@ -420,8 +420,6 @@ Líneas de detalle de la factura, permitiendo trazabilidad hacia servicios prest
 | precio_unitario | Precio unitario aplicado        |
 | subtotal        | cantidad × precio_unitario      |
 
-_Nota aclarativa:_ La entidad contempla la regla exclusiva donde `(id_servicio IS NOT NULL AND id_medicamento IS NULL)` OR `(id_servicio IS NULL AND id_medicamento IS NOT NULL)`.
-
 ### Pago
 
 Registra cada transacción de pago sobre una factura, permitiendo abonos parciales y medios de pago combinados (ej. mitad efectivo, mitad tarjeta), algo que el campo único `medio_pago` de `Factura` no podía representar.
